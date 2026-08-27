@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VERGIL — Robô Sentinela | RoboCup</title>
+  <meta name="description" content="VERGIL, robô sentinela de combate desenvolvido para a RoboCup: coroa rotativa de 18 lâminas, adagas retráteis estilo Yamato e núcleo protegido." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;500;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/emblema-vergil.svg" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <!-- ============ HEADER / MENU DE NAVEGAÇÃO ============ -->
+  <header>
+    <div class="header-container">
+      <a class="logo" href="#inicio" aria-label="VERGIL — voltar ao início">
+        <img src="images/emblema-vergil.svg" alt="Emblema do robô VERGIL" width="40" height="40" />
+        <span class="logo-text">
+          <span class="main">VERGIL</span>
+          <span class="sub">SENTINELA DE COMBATE</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#robo">O Robô</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#armas">Armas</a></li>
+          <li><a href="#hardware">Hardware</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow">Projeto RoboCup · Combate por Núcleo</span>
+            <h1>
+              <span>ELE NÃO ATACA</span>
+              <span class="accent">PRIMEIRO.</span>
+            </h1>
+            <p class="lede">
+              <strong>VERGIL</strong> é o robô sentinela que estamos construindo para a arena da RoboCup.
+              No centro, protegida por uma coroa de lâminas giratórias, fica a <em>esfera de núcleo</em> —
+              o ponto que precisa sobreviver até o fim do combate. Tudo no chassi foi desenhado em torno
+              dessa única prioridade: defender o núcleo e abrir uma brecha no do adversário.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#robo">Conhecer o robô</a>
+              <a class="btn btn-ghost" href="#armas">Ver sistema de armas</a>
+            </div>
+          </div>
+
+          <div class="hud-card">
+            <h2>// Ficha técnica — Yamato G3</h2>
+            <div class="hud-stats">
+              <div class="hud-stat">
+                <span class="n">18<span class="u">un</span></span>
+                <span class="l">Lâminas de aço inox 304</span>
+              </div>
+              <div class="hud-stat">
+                <span class="n">360<span class="u">°</span></span>
+                <span class="l">Giro da coroa rotativa</span>
+              </div>
+              <div class="hud-stat">
+                <span class="n">3<span class="u">un</span></span>
+                <span class="l">Adagas retráteis "Yamato"</span>
+              </div>
+              <div class="hud-stat">
+                <span class="n">3<span class="u">un</span></span>
+                <span class="l">Rodas caster omnidirecionais</span>
+              </div>
+              <div class="hud-stat">
+                <span class="n">20<span class="u">"</span></span>
+                <span class="l">Diâmetro da base</span>
+              </div>
+              <div class="hud-stat">
+                <span class="n">4<span class="u">cam</span></span>
+                <span class="l">Camadas de proteção triangular</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APRESENTAÇÃO DO ROBÔ ============ -->
+    <section class="apresentacao" id="robo">
+      <div class="wrap">
+        <div class="story-grid">
+          <div class="story-text">
+            <span class="eyebrow">O Robô</span>
+            <h2 class="section-title">A HISTÓRIA POR TRÁS<br class="hide-mobile" /> DO <span class="accent">VERGIL</span></h2>
+            <p>
+              Todo projeto de robótica de combate começa com uma pergunta simples: o que vale a pena
+              proteger? Decidimos que, para o VERGIL, a resposta era o <span class="cap">núcleo</span> —
+              uma esfera vermelha posicionada bem no centro do chassi, envolta por uma coroa de dezoito
+              lâminas de aço inoxidável. Se o núcleo cai, o combate acaba. Por isso construímos o robô de
+              fora para dentro, como uma armadura que gira em torno do que realmente importa.
+            </p>
+            <p>
+              O nome e o estilo das lâminas são uma homenagem direta ao universo de <strong>Devil May Cry</strong>
+              e à katana Yamato — daí os painéis de madeira de nogueira gravados, as borlas de couro e o
+              acabamento em prata que aparecem por todo o chassi. É estética de samurai aplicada a um
+              problema de engenharia: como manter mobilidade omnidirecional, proteção em camadas e um
+              sistema de ataque retrátil dentro de uma base de apenas 20 polegadas de diâmetro.
+            </p>
+            <p>
+              O resultado é um robô que joga na defensiva por natureza. A coroa rotativa intercepta
+              qualquer investida antes que ela chegue perto do núcleo, enquanto as três adagas
+              retráteis — guardadas nas laterais do chassi — esperam a abertura certa para atacar o
+              núcleo do adversário. Não é o robô mais rápido da arena. É o que erra menos.
+            </p>
+          </div>
+
+          <figure class="story-figure">
+            <img src="images/vergil-completo.jpg" alt="Render do robô VERGIL completo, mostrando a coroa de lâminas, o núcleo vermelho e os painéis de madeira gravada" />
+            <figcaption>VERGIL — render de apresentação, vista frontal</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERIA (mín. 6 imagens) ============ -->
+    <section class="galeria" id="galeria">
+      <div class="wrap">
+        <span class="eyebrow">Registro Visual</span>
+        <h2 class="section-title">GALERIA</h2>
+        <p class="section-lede">Do render de apresentação ao blueprint de montagem: cada detalhe do VERGIL, em close.</p>
+
+        <div class="gallery-grid">
+          <figure>
+            <img src="images/vergil-completo.jpg" alt="VERGIL completo, vista frontal na arena" loading="lazy" />
+            <figcaption><span class="tag">01 /</span> Vista frontal completa</figcaption>
+          </figure>
+          <figure>
+            <img src="images/vergil-coroa-laminas.jpg" alt="Close da coroa de 18 lâminas rotativas protegendo o núcleo vermelho" loading="lazy" />
+            <figcaption><span class="tag">02 /</span> Coroa de lâminas e núcleo</figcaption>
+          </figure>
+          <figure>
+            <img src="images/vergil-blasao.jpg" alt="Close do brasão em prata e dos painéis de madeira de nogueira gravados" loading="lazy" />
+            <figcaption><span class="tag">03 /</span> Brasão e painéis gravados</figcaption>
+          </figure>
+          <figure>
+            <img src="images/vergil-borlas.jpg" alt="Close das borlas de couro, rodas omnidirecionais e iluminação de LED ciano" loading="lazy" />
+            <figcaption><span class="tag">04 /</span> Borlas, rodas e LED de assoalho</figcaption>
+          </figure>
+          <figure>
+            <img src="images/vergil-blueprint.jpg" alt="Blueprint técnico completo de montagem do robô VERGIL" loading="lazy" />
+            <figcaption><span class="tag">05 /</span> Blueprint de montagem — Revisão A</figcaption>
+          </figure>
+          <figure>
+            <img src="images/vergil-adagas-sistema.jpg" alt="Diagrama do sistema retrátil das adagas estilo Yamato" loading="lazy" />
+            <figcaption><span class="tag">06 /</span> Sistema retrátil das adagas</figcaption>
+          </figure>
+          <figure>
+            <img src="images/vergil-protecao-camadas.jpg" alt="Diagrama das quatro camadas de proteção triangular do chassi" loading="lazy" />
+            <figcaption><span class="tag">07 /</span> Camadas de proteção triangular</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SISTEMA DE ARMAS ============ -->
+    <section class="armas" id="armas">
+      <div class="wrap">
+        <span class="eyebrow">Combate</span>
+        <h2 class="section-title">SISTEMA DE <span class="accent-red">ARMAS</span></h2>
+        <p class="section-lede">Uma camada de defesa passiva e uma de ataque ativo, trabalhando em torno do mesmo núcleo.</p>
+
+        <div class="armas-grid">
+          <div class="arma-card">
+            <span class="idx">DEFESA · PASSIVA</span>
+            <h3>Coroa Rotativa de Lâminas</h3>
+            <p>
+              Dezoito lâminas de aço inoxidável 304 ficam presas ao redor do núcleo e giram continuamente,
+              acionadas por um servo-motor rotativo de 360°. Qualquer objeto que se aproxime do centro do
+              robô — uma adaga adversária, um braço mecânico — encontra a coroa antes de encontrar o
+              núcleo. É a primeira e mais constante linha de defesa do VERGIL.
+            </p>
+            <ul>
+              <li>18 lâminas em aço inox 304</li>
+              <li>Servo-motor rotativo contínuo de 360°</li>
+              <li>Cápsula central protege a esfera-núcleo</li>
+            </ul>
+          </div>
+
+          <div class="arma-card">
+            <span class="idx">ATAQUE · ATIVO</span>
+            <h3>Adagas Retráteis "Yamato"</h3>
+            <p>
+              Três adagas estilo Yamato ficam guardadas em slots nas laterais do chassi, acionadas por
+              micro-servos de atuação linear. Quando o operador identifica uma abertura no adversário, a
+              adaga avança em linha reta — um golpe de estocada rápido e preciso — e retorna imediatamente
+              à posição retraída, protegendo a lâmina de contra-ataques.
+            </p>
+            <ul>
+              <li>3 slots de adagas independentes</li>
+              <li>Micro-servo de atuação linear por slot</li>
+              <li>Ataque de estocada linear, alta velocidade</li>
+            </ul>
+          </div>
+
+          <div class="arma-cycle" aria-label="Ciclo de enfincada da adaga">
+            <div class="step"><b>01 · Retraído</b>Adaga guardada dentro do chassi, fora de alcance</div>
+            <span class="arrow" aria-hidden="true">→</span>
+            <div class="step"><b>02 · Ataque</b>Micro-servo linear impulsiona a lâmina para frente</div>
+            <span class="arrow" aria-hidden="true">→</span>
+            <div class="step"><b>03 · Estendido</b>Estocada completa no núcleo adversário</div>
+            <span class="arrow" aria-hidden="true">→</span>
+            <div class="step"><b>04 · Retorno</b>Retração imediata para a posição segura</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HARDWARE ============ -->
+    <section class="hardware" id="hardware">
+      <div class="wrap">
+        <span class="eyebrow">Montagem</span>
+        <h2 class="section-title">HARDWARE DE <span class="accent">MONTAGEM</span></h2>
+        <p class="section-lede">Os componentes físicos e eletrônicos necessários para tirar o VERGIL do blueprint e colocá-lo na arena.</p>
+
+        <div class="hardware-grid">
+          <div class="hw-card">
+            <span class="code">P1</span>
+            <h3>Chassi de Alumínio</h3>
+            <p>Base estrutural em alumínio leve, dividida em compartimentos para acomodar motor, baterias e fiação.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P2</span>
+            <h3>Servo-Motor Rotativo 360°</h3>
+            <p>Motor central responsável por girar continuamente a coroa de 18 lâminas ao redor do núcleo.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P3</span>
+            <h3>Lâminas de Aço Inox 304</h3>
+            <p>Dezoito lâminas fixadas na coroa rotativa, resistentes a impacto e corrosão.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P4</span>
+            <h3>Adagas "Yamato"</h3>
+            <p>Três adagas de estocada retrátil, acopladas aos micro-servos de atuação linear.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P5</span>
+            <h3>Atuadores Lineares</h3>
+            <p>Micro-servos responsáveis pelo ciclo retraído → ataque → estendido de cada adaga.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P6</span>
+            <h3>Painéis de Nogueira</h3>
+            <p>Painéis de madeira gravada que revestem o chassi, com filigrana decorativa em prata.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P7</span>
+            <h3>Rodas Caster Omnidirecionais</h3>
+            <p>Três rodas caster distribuídas na base, garantindo deslocamento livre em qualquer direção.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P8</span>
+            <h3>Módulo de Controle Sem Fio</h3>
+            <p>Microcontrolador com Bluetooth/Wi-Fi, recebendo comandos do aplicativo de controle no celular.</p>
+          </div>
+          <div class="hw-card">
+            <span class="code">P9</span>
+            <h3>Bateria e Fiação</h3>
+            <p>Pacote de bateria recarregável e chicote elétrico que alimenta motores, servos e LEDs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VÍDEOS ============ -->
+    <section class="videos" id="videos">
+      <div class="wrap">
+        <span class="eyebrow">Registro em Movimento</span>
+        <h2 class="section-title">VÍDEOS DO <span class="accent">VERGIL</span></h2>
+        <p class="section-lede">Dois vídeos curtos, hospedados no YouTube, mostrando o robô saindo do papel.</p>
+
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/tGz1zodn8oI?si=N7nF2e5Iv32Qj4gF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <span class="tag">VÍDEO 01 · 30s</span>
+              <h3>Bastidores da construção</h3>
+              <p>Etapas da montagem do chassi, dos painéis de nogueira e da coroa de lâminas.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/Zq_4OiFH1bw"
+                title="VERGIL — em movimento, controlado pelo celular"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy">
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="tag">VÍDEO 02 · 30s</span>
+              <h3>Em movimento, via celular</h3>
+              <p>VERGIL se deslocando na arena, comandado em tempo real pelo aplicativo de controle.</p>
+            </div>
+          </article>
+
+          <p class="video-note">
+            ⚠ Falta o Vídeo 02: publique o vídeo de "em movimento, via celular" no YouTube e troque
+            <code>SEU_ID_AQUI_2</code> pelo ID real (a parte final do link, depois de <code>watch?v=</code>
+            ou <code>shorts/</code>) no <code>&lt;iframe&gt;</code> correspondente em <code>index.html</code>.
+            Se aparecer "Erro 153" em algum vídeo, é o YouTube bloqueando a incorporação — confira em
+            <strong>YouTube Studio → Conteúdo → Detalhes → Mostrar mais → Incorporação</strong> se a opção
+            "Permitir incorporação" está ativada e se o vídeo está como Público ou Não listado (não Privado).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPE ============ -->
+    <section class="equipe" id="equipe">
+      <div class="wrap">
+        <span class="eyebrow">Quem Constrói</span>
+        <h2 class="section-title">A EQUIPE</h2>
+        <p class="section-lede">Integrantes responsáveis pelo projeto VERGIL para a RoboCup.</p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">AK</div>
+            <h3>Rafael Grande Schumacher</h3>
+            <span class="role">569573</span>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">02</div>
+            <h3>Rafael Scatena</h3>
+            <span class="role">569830</span>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">03</div>
+            <h3>Matheus Haraguth</h3>
+            <span class="role">568964</span>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">04</div>
+            <h3>Vinicius dos Santos Grana</h3>
+            <span class="role">568911</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="rodape">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/emblema-vergil.svg" alt="Emblema do robô VERGIL" width="34" height="34" />
+          <span>
+            <span class="name" style="display:block;">VERGIL</span>
+            <span class="tagline">ROBÔ SENTINELA · ROBOCUP</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 VERGIL — Projeto RoboCup · FIAP</span>
+        <span>Desenvolvido por Rafael Grande</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
